@@ -62,14 +62,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart ();
-        if(SharedPreferenceManager.getInstance ( this ).isLoggedIn ()){
-            Intent intent = new Intent ( this, DashboardActivity.class );
-            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
-            startActivity ( intent );
-        }
+
 //        else if(!SharedPreferenceManager.getInstance ( this ).isLoggedIn () && SharedPreferenceManager.getInstance ( this ).isSaved () ){
 //            Intent intent = new Intent ( this, DashboardActivity.class );
 //            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
