@@ -1,5 +1,7 @@
 package com.example.fitnessapp.api;
 
+import com.example.fitnessapp.model_class.DashboardResponse;
+import com.example.fitnessapp.model_class.EditProfileResponse;
 import com.example.fitnessapp.model_class.Food;
 import com.example.fitnessapp.model_class.LoginResponse;
 import com.example.fitnessapp.model_class.MedicalDataResponse;
@@ -63,5 +65,20 @@ public interface Api {
             @Field ( "problem" ) int prob2,
             @Field ( "problem" ) int prob3
             );
+    @GET("info/profile/")
+    Call<DashboardResponse> getInfo(@Header("Authorization") String token);
 
+    @FormUrlEncoded
+    @PUT("info/profile/")
+    Call<EditProfileResponse> updateInfo(
+            @Header("Authorization") String token,
+            @Field("gender") String gender,
+            @Field("weight") String weight,
+            @Field("height") String height,
+            @Field("goals") String goals,
+            @Field("activity") String activity,
+            @Field("age") String age,
+            @Field("name") String name,
+            @Field("foodChoice") int foodChoice,
+            @Field("lactoseIntolerance") Boolean lactoseIntolerance);
 }

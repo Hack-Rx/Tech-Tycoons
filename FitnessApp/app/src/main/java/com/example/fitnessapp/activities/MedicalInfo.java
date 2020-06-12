@@ -3,6 +3,7 @@ package com.example.fitnessapp.activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -27,8 +28,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MedicalInfo extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener, MultipleChoiceFragment.onMultiChoiceListener {
- private Spinner bloodGroupSpinner;
- private EditText description;
+    private Spinner bloodGroupSpinner;
+    private EditText description;
     private TextView tvSelectedChoicses;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +73,9 @@ public class MedicalInfo extends AppCompatActivity implements AdapterView.OnItem
                 if (response1 != null) {
                     if (response1.getSucess ()) {
                         Toast.makeText ( MedicalInfo.this, "Done succesfully", Toast.LENGTH_SHORT ).show ();
-
+                        Intent intent = new Intent ( MedicalInfo.this, DashboardActivity.class );
+                        intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
+                        startActivity ( intent );
                     } else {
                         Toast.makeText ( MedicalInfo.this, "error", Toast.LENGTH_SHORT ).show ();
                     }
@@ -100,7 +103,15 @@ public class MedicalInfo extends AppCompatActivity implements AdapterView.OnItem
         }
 
     }
-
+    @Override
+    protected void onStart() {
+        super.onStart ();
+        if(SharedPreferenceManager.getInstance ( this ).isMedical ()){
+            Intent intent = new Intent ( this, DashboardActivity.class );
+            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
+            startActivity ( intent );
+        }
+    }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

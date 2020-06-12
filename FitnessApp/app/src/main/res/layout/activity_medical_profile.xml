@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:layout_marginTop="20dp"
+    tools:context=".activities.MedicalProfile">
+
+    <TextView
+        android:textSize="30dp"
+        android:textColor="#FF4E50"
+        android:fontFamily="@font/antic"
+        android:textStyle="bold"
+        android:text="My Medical Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="@font/baloo"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group : "
+            android:textSize="20dp"/>
+        <TextView
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/baloo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bloodGroup"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:textSize="20dp"
+           android:fontFamily="@font/baloo"
+           android:layout_marginTop="10dp"
+           android:text="Medical Issues :"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <LinearLayout
+           android:layout_marginLeft="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:textSize="18dp"
+               android:layout_marginTop="15dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Diabetes"/>
+           <TextView
+               android:textSize="18dp"
+               android:layout_marginTop="15dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Hypertension"/>
+           <TextView
+               android:textSize="18dp"
+               android:layout_marginTop="15dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Obesity"/>
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <TextView
+        android:textSize="20dp"
+        android:fontFamily="@font/baloo"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"/>
+    <TextView
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/descriptionprofile"/>
+
+</LinearLayout>

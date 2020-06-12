@@ -52,10 +52,17 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         food_recyclerView = findViewById ( R.id.food_recyclerView );
         food_recyclerView.setLayoutManager ( new LinearLayoutManager ( this ) );
         drawerLayout = findViewById ( R.id.drawer_layout );
-
+        navigationView = findViewById ( R.id.nav_view );
+        toolbar = findViewById ( R.id.toolbar );
 //
 //        //
-
+        setSupportActionBar ( toolbar );
+        navigationView.bringToFront ();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle ( this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close );
+        drawerLayout.addDrawerListener ( toggle );
+        toggle.syncState ();
+        navigationView.setNavigationItemSelectedListener ( this );
+        navigationView.setCheckedItem ( R.id.nav_home );
 
         //
         String tempToken = "";
@@ -81,7 +88,12 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onBackPressed() {
-      
+        if (drawerLayout.isDrawerOpen ( GravityCompat.START )) {
+            drawerLayout.closeDrawer ( GravityCompat.START );
+        } else {
+            super.onBackPressed ();
+        }
+
     }
 
     @Override
@@ -96,7 +108,8 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
     }
 
     public void searchFood() {
-
+//        Intent intent = new Intent ( DashboardActivity.this, SearchFood.class );
+//        startActivity ( intent );
     }
 
     @Override

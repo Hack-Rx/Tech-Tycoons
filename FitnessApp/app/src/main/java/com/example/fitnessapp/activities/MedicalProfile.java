@@ -1,4 +1,19 @@
 package com.example.fitnessapp.activities;
 
-class MedicalProfile {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.fitnessapp.R;
+
+
+public class MedicalProfile extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate ( savedInstanceState );
+        setContentView ( R.layout.activity_medical_profile );
+
+    }
 }
