@@ -1,6 +1,7 @@
 package com.example.fitnessapp.api;
 
 import com.example.fitnessapp.model_class.LoginResponse;
+import com.example.fitnessapp.model_class.MedicalDataResponse;
 import com.example.fitnessapp.model_class.UserStatsResponse;
 
 import java.util.List;
@@ -49,42 +50,6 @@ public interface Api {
 
     );
 
-    @GET("info/profile/")
-    Call<DashboardResponse> getInfo(@Header("Authorization") String token);
-
-    @GET("food/get-recoomended-food/")
-    Call<List<Food>> getFood(@Header("Authorization") String token);
-
-    @GET("food/list-of-food/")
-    Call<FoodQuery> getFoodInfo(@Header("Authorization") String token,
-                                @Query("search") String foodItemNAme);
-
-    @FormUrlEncoded
-    @PUT("info/profile/")
-    Call<EditProfileResponse> updateInfo(
-            @Header("Authorization") String token,
-            @Field("gender") String gender,
-            @Field("weight") String weight,
-            @Field("height") String height,
-            @Field("goals") String goals,
-            @Field("activity") String activity,
-            @Field("age") String age,
-            @Field("name") String name,
-            @Field("foodChoice") int foodChoice,
-            @Field("lactoseIntolerance") Boolean lactoseIntolerance);
-
-    @FormUrlEncoded
-    @POST("info/Dailydiet/")
-    Call<DailyDataResponse> postDailyFood(
-            @Header("Authorization") String token,
-            @Field("item") int item,
-            @Field("amount") int amount
-    );
-
-    @GET("info/Dailydiet/")
-    Call<GetDailyDataResponse> getDailyFood(
-            @Header("Authorization") String token
-    );
     @FormUrlEncoded
     @POST("info/Medicalform/")
     Call<MedicalDataResponse> getMedicalInfo(

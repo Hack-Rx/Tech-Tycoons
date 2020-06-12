@@ -56,16 +56,16 @@ public class UserStatistics extends AppCompatActivity implements AdapterView.OnI
 //        selectDisease.setOnClickListener ( this );
 
     }
-    @Override
-    protected void onStart() {
-        super.onStart ();
-        if(SharedPreferenceManager.getInstance ( this ).isSaved ()){
-            Intent intent = new Intent ( this, MedicalInfo.class );
-            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
-            startActivity ( intent );
-        }
-    }
-
+//    @Override
+//    protected void onStart() {
+//        super.onStart ();
+//        if(SharedPreferenceManager.getInstance ( this ).isSaved ()){
+//            Intent intent = new Intent ( this, MedicalInfo.class );
+//            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
+//            startActivity ( intent );
+//        }
+//    }
+//
 
 
     @Override
@@ -171,7 +171,6 @@ public class UserStatistics extends AppCompatActivity implements AdapterView.OnI
 
            if(userStatsResponse!=null) {
              if (userStatsResponse.isSucess ()) {
-                SharedPreferenceManager.getInstance (  UserStatistics.this).saveStatistics ( userStatsResponse.getData () );
                  Intent intent = new Intent ( UserStatistics.this, MedicalInfo.class );
                 intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
                  startActivity ( intent );

@@ -11,8 +11,8 @@ public class LoginResponse {
     private User user;
 
     /*
-     * {"response":200,"success":true,"error_message":"sucessfull login","data":{"token":"85b56a7a60ac775552f773e0b44f17527f0b5477","username":"kanishka","email":"kani123@gmail.com","id":5}}
-     * */
+    * {"response":200,"success":true,"error_message":"sucessfull login","data":{"token":"85b56a7a60ac775552f773e0b44f17527f0b5477","username":"kanishka","email":"kani123@gmail.com","id":5}}
+    * */
 
     public LoginResponse(boolean success, int response, String error_message, User user) {
         this.success = success;

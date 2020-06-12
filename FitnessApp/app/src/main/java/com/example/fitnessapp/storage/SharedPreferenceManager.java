@@ -1,7 +1,10 @@
 package com.example.fitnessapp.storage;
+
 import android.content.Context;
 import android.content.SharedPreferences;
+
 import com.example.fitnessapp.model_class.Data;
+import com.example.fitnessapp.model_class.InfoMedical;
 import com.example.fitnessapp.model_class.User;
 
 public class SharedPreferenceManager {
@@ -13,10 +16,15 @@ public class SharedPreferenceManager {
     }
     public static synchronized SharedPreferenceManager getInstance(Context mCtx) {
         if (mInstance == null) {
-            mInstance = new SharedPreferenceManager(mCtx);
+            mInstance = new SharedPreferenceManager (mCtx);
         }
         return mInstance;
     }
+
+
+
+
+
 
 
     public void saveUser(User user) {
@@ -34,8 +42,9 @@ public class SharedPreferenceManager {
         return sharedPreferences.getString ("token", null) != null;
     }
 
-    public User getUser() { mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        return new User(
+    public User getUser() {
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return new User (
                 sharedPreferences.getString("token", null),
                 sharedPreferences.getString("username", null),
                 sharedPreferences.getString("email", null),
