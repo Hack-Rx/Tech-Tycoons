@@ -108,8 +108,8 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
     }
 
     public void searchFood() {
-//        Intent intent = new Intent ( DashboardActivity.this, SearchFood.class );
-//        startActivity ( intent );
+        Intent intent = new Intent ( DashboardActivity.this, SearchFood.class );
+        startActivity ( intent );
     }
 
     @Override

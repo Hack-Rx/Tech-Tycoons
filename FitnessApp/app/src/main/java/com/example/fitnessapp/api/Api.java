@@ -3,8 +3,10 @@ package com.example.fitnessapp.api;
 import com.example.fitnessapp.model_class.DashboardResponse;
 import com.example.fitnessapp.model_class.EditProfileResponse;
 import com.example.fitnessapp.model_class.Food;
+import com.example.fitnessapp.model_class.FoodQuery;
 import com.example.fitnessapp.model_class.LoginResponse;
 import com.example.fitnessapp.model_class.MedicalDataResponse;
+import com.example.fitnessapp.model_class.MedicalResponse;
 import com.example.fitnessapp.model_class.UserStatsResponse;
 
 import java.util.List;
@@ -81,4 +83,11 @@ public interface Api {
             @Field("name") String name,
             @Field("foodChoice") int foodChoice,
             @Field("lactoseIntolerance") Boolean lactoseIntolerance);
+    @GET("food/list-of-food/")
+    Call<FoodQuery> getFoodInfo(@Header("Authorization") String token,
+                                @Query("search") String foodItemNAme);
+    @GET("info/Medicalform/")
+    Call<MedicalResponse> medicalData(
+            @Header("Authorization") String token
+    );
 }
