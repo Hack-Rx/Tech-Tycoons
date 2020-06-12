@@ -1,12 +1,5 @@
 package com.example.fitnessapp.activities;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +8,14 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Toast;
+
 
 import com.example.fitnessapp.R;
 import com.example.fitnessapp.api.RetrofitClient;
@@ -30,7 +31,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class DashboardActivity extends AppCompatActivity implements View.OnClickListener{
+public class DashboardActivity extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
     ArrayList<Food> foods = new ArrayList<> ();
     private FoodAdapter foodAdapter;
     private RecyclerView food_recyclerView;
@@ -48,8 +49,12 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         //hooks
         setContentView ( R.layout.activity_dashboard );
         findViewById ( R.id.searchFood ).setOnClickListener ( this );
+        food_recyclerView = findViewById ( R.id.food_recyclerView );
+        food_recyclerView.setLayoutManager ( new LinearLayoutManager ( this ) );
+        drawerLayout = findViewById ( R.id.drawer_layout );
 
-
+//
+//        //
 
 
         //
@@ -74,12 +79,24 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         } );
     }
 
+    @Override
+    public void onBackPressed() {
+      
+    }
 
+    @Override
+    protected void onStart() {
+        super.onStart ();
+        if (!SharedPreferenceManager.getInstance ( this ).isSaved ()) {
+            Intent intent = new Intent ( this, UserStatistics.class );
+            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
+            startActivity ( intent );
+        }
 
-
+    }
 
     public void searchFood() {
-        Toast.makeText ( this, "hi", Toast.LENGTH_SHORT ).show ();
+
     }
 
     @Override
@@ -91,8 +108,48 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         }
     }
 
-   
+    public void logout() {
+        SharedPreferenceManager.getInstance ( this ).clear ();
+        Intent intent = new Intent ( this, LoginActivity.class );
+        intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
+        startActivity ( intent );
+    }
 
-
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        switch (menuItem.getItemId ()) {
+            case R.id.nav_home:
+                break;
+            case R.id.nav_settings:
+                Intent intent = new Intent ( this, EditProfile.class );
+                startActivity ( intent );
+                break;
+            case R.id.nav_profile:
+                Intent intent1 = new Intent ( this, UserProfile.class );
+                startActivity ( intent1 );
+                break;
+            case R.id.nav_add:
+                Intent intent2 = new Intent ( this, DailyDiet.class );
+                startActivity ( intent2 );
+                break;
+//            case R.id.nav_chat:
+//                Intent intent5 = new Intent ( this, ChatBot.class );
+//                startActivity ( intent5 );
+//                break;
+            case R.id.nav_medical:
+                Intent intent4 = new Intent ( this,MedicalProfile.class );
+                startActivity ( intent4 );
+                break;
+            case R.id.nav_logout:
+                logout ();
+                break;
+            case R.id.nav_rewards:
+                Intent intent3 = new Intent ( this, Reward.class );
+                startActivity ( intent3 );
+                break;
+        }
+        drawerLayout.closeDrawer ( GravityCompat.START );
+        return true;
+    }
 }
 

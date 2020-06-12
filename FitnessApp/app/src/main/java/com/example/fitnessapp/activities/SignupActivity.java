@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Patterns;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.fitnessapp.R;
@@ -134,16 +136,16 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
 //
     }
-//    @Override
-//    protected void onStart() {
-//        super.onStart ();
-//        if(SharedPreferenceManager.getInstance ( this ).isSaved ()){
-//
-//            Intent intent = new Intent ( this, DashboardActivity.class );
-//            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
-//            startActivity ( intent );
-//        }
-//    }
+    @Override
+    protected void onStart() {
+        super.onStart ();
+        if(SharedPreferenceManager.getInstance ( this ).isSaved ()){
+
+            Intent intent = new Intent ( this, DashboardActivity.class );
+            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
+            startActivity ( intent );
+        }
+    }
 
     @Override
     public void onClick(View v) {

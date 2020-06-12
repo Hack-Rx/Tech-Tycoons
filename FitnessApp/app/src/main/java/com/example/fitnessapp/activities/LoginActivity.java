@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Pair;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +23,9 @@ import com.example.fitnessapp.api.RetrofitClient;
 import com.example.fitnessapp.storage.SharedPreferenceManager;
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.io.IOException;
+
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -32,7 +38,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     Button  login;
 
 
-//try
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,13 +62,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
-
+    @Override
+    protected void onStart() {
+        super.onStart ();
+        if(SharedPreferenceManager.getInstance ( this ).isLoggedIn ()){
+            Intent intent = new Intent ( this, DashboardActivity.class );
+            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
+            startActivity ( intent );
+        }
 //        else if(!SharedPreferenceManager.getInstance ( this ).isLoggedIn () && SharedPreferenceManager.getInstance ( this ).isSaved () ){
 //            Intent intent = new Intent ( this, DashboardActivity.class );
 //            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
 //            startActivity ( intent );
 //        }
-//    }
+    }
 
 
     private void userLogin() {
