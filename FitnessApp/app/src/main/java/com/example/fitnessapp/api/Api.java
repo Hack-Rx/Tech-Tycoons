@@ -1,5 +1,6 @@
 package com.example.fitnessapp.api;
 
+import com.example.fitnessapp.model_class.Food;
 import com.example.fitnessapp.model_class.LoginResponse;
 import com.example.fitnessapp.model_class.MedicalDataResponse;
 import com.example.fitnessapp.model_class.UserStatsResponse;
@@ -49,6 +50,8 @@ public interface Api {
             @Field("lactoseIntolerance") Boolean lactoseIntolerance
 
     );
+    @GET("food/get-recoomended-food/")
+    Call<List<Food>> getFood(@Header("Authorization") String token);
 
     @FormUrlEncoded
     @POST("info/Medicalform/")
@@ -60,4 +63,5 @@ public interface Api {
             @Field ( "problem" ) int prob2,
             @Field ( "problem" ) int prob3
             );
+
 }

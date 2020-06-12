@@ -51,21 +51,7 @@ public class UserStatistics extends AppCompatActivity implements AdapterView.OnI
         editTextAge = findViewById ( R.id.ageInput );
         aSwitch = findViewById ( R.id.switchlactose );
         findViewById ( R.id.savebtn ).setOnClickListener ( this );
-//        tvSelectedChoicses = findViewById ( R.id.tvSelectedChoices );
-//        Button selectDisease = findViewById ( R.id.diseaseButton );
-//        selectDisease.setOnClickListener ( this );
 
-    }
-//    @Override
-//    protected void onStart() {
-//        super.onStart ();
-//        if(SharedPreferenceManager.getInstance ( this ).isSaved ()){
-//            Intent intent = new Intent ( this, MedicalInfo.class );
-//            intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
-//            startActivity ( intent );
-//        }
-//    }
-//
 
 
     @Override
@@ -169,7 +155,7 @@ public class UserStatistics extends AppCompatActivity implements AdapterView.OnI
                 UserStatsResponse userStatsResponse = response.body ();
           Log.d("err", String.valueOf ( response ) );
 
-           if(userStatsResponse!=null) {
+
              if (userStatsResponse.isSucess ()) {
                  Intent intent = new Intent ( UserStatistics.this, MedicalInfo.class );
                 intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
@@ -179,7 +165,7 @@ public class UserStatistics extends AppCompatActivity implements AdapterView.OnI
                         }
            }
 
-            }
+
 
             @Override
             public void onFailure(Call<UserStatsResponse> call, Throwable t) {
@@ -197,26 +183,6 @@ public class UserStatistics extends AppCompatActivity implements AdapterView.OnI
             case R.id.savebtn:
                 userStats ();
                 break;
-//            case R.id.diseaseButton:
-//                DialogFragment multiChoiceDialog = new MultipleChoiceFragment ();
-//                multiChoiceDialog.setCancelable ( false );
-//                multiChoiceDialog.show ( getSupportFragmentManager (),  "MultiChoiceDialog");
-
         }
     }
-
-//    @Override
-//    public void onPositiveButtonClicked(String[] list, ArrayList<String> selectedItemList) {
-//        StringBuilder stringBuilder = new StringBuilder (  );
-//        stringBuilder.append ( "Selected Choices = " );
-//        for(String str:selectedItemList){
-//            stringBuilder.append ( str+" " );
-//            tvSelectedChoicses.setText ( stringBuilder );
-//        }
-//    }
-//
-//    @Override
-//    public void onNegativeButtonClicked() {
-//
-//    }
-}
+}}
