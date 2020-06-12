@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="20dp"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:paddingHorizontal="30dp"
+    tools:context=".activities.MedicalInfo">
+
+
+<TextView
+    android:textColor="#FF4E50"
+    android:fontFamily="@font/baloo"
+    android:layout_marginLeft="25dp"
+    android:layout_gravity="center"
+    android:textSize="40dp"
+    android:text="Medical Profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlay8"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@drawable/container_bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/bloodgroup"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <Spinner
+                    android:paddingLeft="30dp"
+                    android:id="@+id/spinBloodGroup"
+                    android:background="#faf7f7"
+                    android:layout_width="290dp"
+                    android:layout_height="70dp"
+                    android:entries="@array/SpinnerBloodGroup">
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="60dp"
+                android:paddingLeft="18dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/medicalicon"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="18dp"
+                android:background="#faf7f7"
+                android:id="@+id/diseaseButton"
+               android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:text="Medical Condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvSelectedChoices"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"/>
+
+    <EditText
+        android:paddingHorizontal="30dp"
+       android:layout_marginTop="20dp"
+        android:id="@+id/description"
+        android:background="@drawable/descriptionbg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:id="@+id/msavebtn"
+        android:background="@drawable/btngrad"
+        android:text="Save and Next "
+        android:textColor="#F0F3F3"
+        android:textSize="20sp"
+        android:layout_marginTop="100dp"
+        />
+
+</LinearLayout>

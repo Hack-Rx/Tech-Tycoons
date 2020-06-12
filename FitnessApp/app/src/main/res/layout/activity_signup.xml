@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignupActivity">
+
+
+    <ImageView
+        android:transitionName="logo_trans"
+        android:id="@+id/logo"
+        android:src="@drawable/splash"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:id="@+id/WelcomeBack"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="text_trans"
+        android:fontFamily="@font/bungee"
+        android:layout_marginTop="40sp"
+        android:text="WELCOME"
+        android:textSize="32sp" />
+    <TextView
+        android:transitionName="desc_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp to start your New Journey!"
+        android:fontFamily="@font/antic"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/SignupTextInputLayoutStyle"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/uname"
+                android:hint="Username"
+                android:transitionName="uname_trans"
+                android:textColor="#404742"
+                android:fontFamily="@font/antic"
+                android:textColorHint="#FF4E50"
+                android:drawableLeft="@drawable/ic_action_uname"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            style="@style/SignupTextInputLayoutStyle"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/email"
+                android:textColorHint="#FF4E50"
+                android:hint="Email"
+                android:textColor="#404742"
+                android:fontFamily="@font/antic"
+                android:drawableLeft="@drawable/ic_action_email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+
+            style="@style/SignupTextInputLayoutStyle"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/password"
+                android:textColor="#404742"
+                android:hint="Password"
+                android:transitionName="password_trans"
+                android:fontFamily="@font/antic"
+                android:textColorHint="#FF4E50"
+                android:importantForAutofill="no"
+                android:drawableLeft="@drawable/ic_action_password"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            style="@style/SignupTextInputLayoutStyle"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/confpassword"
+                android:hint="Confirm Password"
+                android:fontFamily="@font/antic"
+                android:textColorHint="#FF4E50"
+                android:textColor="#404742"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_action_password"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:text="SIGNUP"
+            android:transitionName="button_trans"
+            android:id="@+id/signupbtn"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"/>
+
+        <TextView
+            android:fontFamily="@font/antic"
+            android:layout_gravity="center"
+            android:transitionName="login_signup_trans"
+            android:id="@+id/loginclick"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Already have an account? Login"
+            android:textColor="#404742"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

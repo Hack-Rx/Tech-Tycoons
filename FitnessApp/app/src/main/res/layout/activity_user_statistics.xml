@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activities.UserStatistics">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/myprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="My Profile"
+        android:textColor="#f12711"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/knowbetter"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myprofile"
+        android:layout_centerHorizontal="true"
+        android:text="Help us know you better to help boost your diet"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlay1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/knowbetter">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/nameicon"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="290dp"
+            android:layout_height="70dp"
+            app:errorEnabled="true"
+            android:background="#faf7f7"
+            android:id="@+id/nameTextView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Name"
+                android:padding="15dp"
+                android:background="#faf7f7"
+                android:textColorHint="#f0f0ff"
+                android:id="@+id/nameInput"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlay7"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/linlay1">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ageicon"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="290dp"
+            android:layout_height="70dp"
+            app:errorEnabled="true"
+            android:background="#faf7f7"
+            android:id="@+id/agetextView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:importantForAutofill="no"
+                android:padding="15dp"
+                android:inputType="number"
+                android:hint="Age"
+                android:background="#faf7f7"
+                android:id="@+id/ageInput"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlay2"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/linlay7"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/gendericon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Spinner
+                android:padding="15dp"
+                android:id="@+id/spinGender"
+                android:background="#faf7f7"
+                android:layout_width="290dp"
+                android:layout_height="80dp"
+                android:entries="@array/SpinnerGender">
+            </Spinner>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlay3"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/linlay2">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/weighticon"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="290dp"
+            android:layout_height="70dp"
+            app:errorEnabled="true"
+            android:background="#faf7f7"
+            android:id="@+id/weighttextView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:hint="Weight(kg)"
+               android:ems="10"
+                android:padding="15dp"
+                android:background="#faf7f7"
+                android:textColorHint="#f0f0ff"
+                android:id="@+id/weightInput"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlay4"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/linlay3">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/heighticon"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="290dp"
+            android:layout_height="70dp"
+            app:errorEnabled="true"
+            android:background="#faf7f7"
+            android:id="@+id/heighttextView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:background="#faf7f7"
+                android:hint="Height(cm)"
+                android:padding="15dp"
+                android:ems="10"
+                android:textColorHint="#f0f0ff"
+                android:id="@+id/heightInput"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+]
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlay5"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/linlay4"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/goalicondash"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Spinner
+                android:id="@+id/spinGoals"
+                android:background="#faf7f7"
+                android:layout_width="290dp"
+                android:padding="15dp"
+                android:layout_height="80dp"
+                android:entries="@array/SpinnerGoals">
+            </Spinner>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlay6"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/linlay5"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/activityicon"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Spinner
+                android:id="@+id/spinActivity"
+                android:background="#faf7f7"
+                android:padding="15dp"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                android:entries="@array/SpinnerActivity">
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlay9"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/linlay6"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/dietform"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Spinner
+                android:id="@+id/spinDiet"
+                android:background="#faf7f7"
+                android:padding="15dp"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                android:entries="@array/SpinnerDiet">
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linlay9"
+        android:orientation="horizontal"
+        android:id="@+id/linlay10"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/lactoseintolerance"/>
+        <TextView
+            android:paddingLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Lactose Intolerance?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Switch
+            android:id="@+id/switchlactose"
+            android:background="@drawable/container_bg"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginBottom="30dp"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linlay10"
+        android:id="@+id/savebtn"
+        android:background="@drawable/btngrad"
+        android:layout_centerHorizontal="true"
+        android:text="Save and Next "
+        android:textColor="#F0F3F3"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        />
+
+</RelativeLayout>
+</ScrollView>

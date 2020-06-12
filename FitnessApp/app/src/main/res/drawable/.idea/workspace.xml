@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7d8ae58-982c-4f81-b5ed-4674118b6db6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/DailyDiet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/EditProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/MedicalInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/Reward.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/SignupActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/Availablity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/DailyData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/DailyDataResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/Datum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/DatumAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/EditProfileResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/FoodAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/FoodModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/GetDailyDataResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/MultipleChoiceFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/ProblemsCanSolve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/QueryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/Udata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../anim/bottom_animation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../anim/top_animation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-anydpi/ic_action_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-hdpi/ic_action_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-mdpi/ic_action_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-xhdpi/ic_action_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-xxhdpi/ic_action_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activityicon.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/age.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ageicon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agetry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amount.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/availabiluity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bloodgroup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bmi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bmricon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calories.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carbohydrate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cholestrol.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/condition.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboardsbg.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dietform.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fats.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fiber.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodcontainer_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodgroup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fooditembg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodsearch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gender.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gendericon.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalsic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradline.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/headerbg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/height.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heighticon.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heighttry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ic_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ic_edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ic_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ic_logout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ic_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ic_reward.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ic_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lactoseintolerance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medicalicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nameicon.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/problems.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profilenav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiletry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protein.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewardbottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchbtn.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchiconcrop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/splash2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sugar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weighticon.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weighttry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../font/aclonica.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../font/antic.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../font/atomic_age.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../font/bad_script.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../font/baloo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../font/bangers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../font/bungee.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../font/chewy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../font/hanalei_fill.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_edit_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_medical_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_reward.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_signup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_user_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/daily_food_list_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/food_list_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/row_food.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/toolbar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../menu/main_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../values-v21/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../values/font_certs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../values/preloaded_fonts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/DashboardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/DashboardActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/SearchFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/SearchFood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/UserStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/activities/UserStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/api/Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/api/Api.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/DashboardResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/DashboardResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/FoodQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/FoodQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/UserStatsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/model_class/UserStatsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/fitnessapp/storage/SharedPreferenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/fitnessapp/storage/SharedPreferenceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-anydpi/ic_action_email.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drawable-anydpi/ic_action_email.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-anydpi/ic_action_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drawable-anydpi/ic_action_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-anydpi/ic_action_uname.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drawable-anydpi/ic_action_uname.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activityicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ageicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmiicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmricon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/menuicon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btngrad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/btngrad.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendericon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gradient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heighticon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nameicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weighticon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_dashboard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_search_food.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_search_food.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_user_statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_user_statistics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../values/styles.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1dCy6KmDeJw46yfPFi6fxxCZXC0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7d8ae58-982c-4f81-b5ed-4674118b6db6" name="Default Changelist" comment="" />
+      <created>1591943192645</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591943192645</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
