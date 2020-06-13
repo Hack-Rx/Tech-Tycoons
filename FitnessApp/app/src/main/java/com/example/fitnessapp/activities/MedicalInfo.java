@@ -28,8 +28,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MedicalInfo extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener, MultipleChoiceFragment.onMultiChoiceListener {
-    private Spinner bloodGroupSpinner;
-    private EditText description;
+ private Spinner bloodGroupSpinner;
+ private EditText description;
     private TextView tvSelectedChoicses;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,16 +70,14 @@ public class MedicalInfo extends AppCompatActivity implements AdapterView.OnItem
             @Override
             public void onResponse(Call<MedicalDataResponse> call, Response<MedicalDataResponse> response) {
                 MedicalDataResponse response1 = response.body ();
-                if (response1 != null) {
-                    if (response1.getSucess ()) {
+
+
                         Toast.makeText ( MedicalInfo.this, "Done succesfully", Toast.LENGTH_SHORT ).show ();
                         Intent intent = new Intent ( MedicalInfo.this, DashboardActivity.class );
                         intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
                         startActivity ( intent );
-                    } else {
-                        Toast.makeText ( MedicalInfo.this, "error", Toast.LENGTH_SHORT ).show ();
-                    }
-                }
+
+
             }
             @Override
             public void onFailure(Call<MedicalDataResponse> call, Throwable t) {

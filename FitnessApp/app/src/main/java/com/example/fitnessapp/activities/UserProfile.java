@@ -1,11 +1,12 @@
 package com.example.fitnessapp.activities;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fitnessapp.R;
 import com.example.fitnessapp.api.RetrofitClient;

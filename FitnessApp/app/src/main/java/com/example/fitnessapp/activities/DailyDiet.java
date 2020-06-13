@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.fitnessapp.R;
 import com.example.fitnessapp.api.RetrofitClient;
+import com.example.fitnessapp.model_class.DailyData;
 import com.example.fitnessapp.model_class.DailyDataResponse;
 import com.example.fitnessapp.model_class.Datum;
 import com.example.fitnessapp.model_class.DatumAdapter;
@@ -30,7 +31,7 @@ public class DailyDiet extends AppCompatActivity implements View.OnClickListener
     private EditText searchText, amount;
     private TextView labelDisplay;
     String id = null;
-    //    ArrayList<Datum> data = new ArrayList<> (  );
+//    ArrayList<Datum> data = new ArrayList<> (  );
     ArrayList<Datum> data = new ArrayList<> (  );
     private DatumAdapter datumAdapter;
     private RecyclerView datumRecyclerView;
@@ -119,7 +120,7 @@ public class DailyDiet extends AppCompatActivity implements View.OnClickListener
                     getDailyDiet ();
                 }
                 else
-                    Toast.makeText ( DailyDiet.this, ":'(", Toast.LENGTH_SHORT ).show ();
+                Toast.makeText ( DailyDiet.this, ":'(", Toast.LENGTH_SHORT ).show ();
             }
 
             @Override
@@ -141,13 +142,13 @@ public class DailyDiet extends AppCompatActivity implements View.OnClickListener
             public void onResponse(Call<GetDailyDataResponse> call, Response<GetDailyDataResponse> response) {
                 String caloriesLeft, caloriesConsumed;
                 if(response.body ().getData ().size ()>0){
-                    data = new ArrayList<> ( response.body ().getData () );
-                    datumAdapter = new DatumAdapter ( DailyDiet.this,data );
-                    datumRecyclerView.setAdapter ( datumAdapter );
-                    caloriesLeft = String.valueOf (  response.body ().getCaloriesLeft ());
-                    caloriesConsumed=String.valueOf ( response.body ().getCaloriesTook () );
-                    calorie_Consumed.setText ( caloriesConsumed );
-                    calorie_Left.setText ( caloriesLeft );
+                   data = new ArrayList<> ( response.body ().getData () );
+                   datumAdapter = new DatumAdapter ( DailyDiet.this,data );
+                   datumRecyclerView.setAdapter ( datumAdapter );
+                   caloriesLeft = String.valueOf (  response.body ().getCaloriesLeft ());
+                   caloriesConsumed=String.valueOf ( response.body ().getCaloriesTook () );
+                   calorie_Consumed.setText ( caloriesConsumed );
+                   calorie_Left.setText ( caloriesLeft );
 
                 }
             }

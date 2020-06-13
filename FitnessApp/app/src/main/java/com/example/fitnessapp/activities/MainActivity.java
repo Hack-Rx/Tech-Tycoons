@@ -15,6 +15,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fitnessapp.R;
+import com.example.fitnessapp.storage.SharedPreferenceManager;
 
 
 public class MainActivity extends AppCompatActivity  {

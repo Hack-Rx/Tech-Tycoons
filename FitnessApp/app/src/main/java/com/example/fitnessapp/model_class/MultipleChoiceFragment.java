@@ -12,11 +12,12 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.fitnessapp.R;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class MultipleChoiceFragment extends DialogFragment {
     public interface onMultiChoiceListener{
-        void onPositiveButtonClicked(String[] list, ArrayList<String> selectedItemList);
+        void onPositiveButtonClicked(String[] list, ArrayList<String> selectedItemList );
         void onNegativeButtonClicked();
     }
 

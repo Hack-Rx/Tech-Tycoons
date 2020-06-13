@@ -11,9 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.Overboard"></activity>
+        <activity android:name=".activities.Overboard" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activities.ChatBot"   android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".activities.MedicalProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.MedicalInfo" />
+        <activity
+            android:name=".activities.Reward"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DailyDiet"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.EditProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UserProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.SignupActivity" />
+        <activity android:name=".activities.SearchFood" />
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.UserStatistics" />
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.MainActivity">

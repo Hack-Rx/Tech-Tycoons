@@ -1,14 +1,5 @@
 package com.example.fitnessapp.activities;
 
-import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -21,6 +12,15 @@ import com.example.fitnessapp.model_class.FoodQuery;
 import com.example.fitnessapp.model_class.QueryAdapter;
 import com.example.fitnessapp.storage.SharedPreferenceManager;
 import com.squareup.picasso.Picasso;
+
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -106,7 +106,7 @@ public class SearchFood extends AppCompatActivity implements View.OnClickListene
                 }
 
 
-                Integer[] imageicon = {R.drawable.dietform, R.drawable.foodgroup, R.drawable.lactoseintolerance, R.drawable.availabiluity, R.drawable.problems, R.drawable.calories, R.drawable.fats, R.drawable.protein, R.drawable.carbohydrate};
+                Integer[] imageicon = {R.drawable.dietform,R.drawable.foodgroup, R.drawable.lactoseintolerance,R.drawable.availabiluity,R.drawable.problems,R.drawable.calories, R.drawable.fats,R.drawable.protein, R.drawable.carbohydrate};
                 String[] label = {"Category","Food-Group","Lactose Content","Availability","Helpful in","Calories", "Fats", "Proteins", "Carbohydrates"};
                 String[] values = {tcategory,tfoodGroup,tlactose,tavailability,problems,calorie, fat, protein, carbohydrate};
 
@@ -122,7 +122,7 @@ public class SearchFood extends AppCompatActivity implements View.OnClickListene
                 recyclerView.setLayoutManager ( layoutManager );
                 recyclerView.setItemAnimator (new DefaultItemAnimator () );
 
-                queryAdapter = new QueryAdapter ( foodModels, SearchFood.this );
+                queryAdapter = new QueryAdapter ( foodModels,SearchFood.this );
                 recyclerView.setAdapter ( queryAdapter );
             }
             @Override

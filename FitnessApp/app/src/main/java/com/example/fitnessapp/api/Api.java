@@ -103,7 +103,7 @@ public interface Api {
             @Field ( "problem" ) int prob1,
             @Field ( "problem" ) int prob2,
             @Field ( "problem" ) int prob3
-    );
+            );
     @GET("info/Medicalform/")
     Call<MedicalResponse> medicalData(
             @Header("Authorization") String token

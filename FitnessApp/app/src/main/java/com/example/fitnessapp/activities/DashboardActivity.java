@@ -11,9 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -39,12 +41,11 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-
+    private TextView recomText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         getWindow ().setFlags ( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
-
 
         //hooks
         setContentView ( R.layout.activity_dashboard );
@@ -77,6 +78,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                 foodAdapter = new FoodAdapter ( DashboardActivity.this, foods );
                 food_recyclerView.setAdapter ( foodAdapter );
                 Toast.makeText ( DashboardActivity.this, "success", Toast.LENGTH_SHORT ).show ();
+
             }
 
             @Override
@@ -128,6 +130,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         startActivity ( intent );
     }
 
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId ()) {
@@ -169,3 +172,4 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         return true;
     }
 }
+

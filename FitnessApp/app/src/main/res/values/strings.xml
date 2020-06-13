@@ -22,15 +22,6 @@
         <item>VeryActive</item>
     </string-array>
 
-    <string-array name="SpinnerMedical">
-        <item>Medical Conditions</item>
-        <item>None</item>
-        <item>Diabetes</item>
-        <item>Hypertension</item>
-        <item>Cholestrol</item>
-        <item>Physical Injury</item>
-    </string-array>
-
     <string-array name="SpinnerDiet">
         <item>Diet Preference</item>
         <item>Vegetarian</item>
@@ -46,20 +37,15 @@
         <item>A+</item>
         <item>AB-</item>
         <item>AB+</item>
-        <item>o+</item>
+        <item>O+</item>
         <item>O-</item>
     </string-array>
     <string-array name="choiceitems">
         <item>None</item>
         <item>Diabetes</item>
         <item>Hypertension</item>
-        <item>Weight Loss Thyroid</item>
         <item>Obesity</item>
-        <item>Cancer</item>
-        <item>Aids</item>
-        <item>Asthma</item>
-        <item>Gastrointestinal Problems</item>
-        <item>Weight Gain Thyroid</item>
+        <item>Low Eyesight</item>
     </string-array>
     <string name="navigation_drawer_open">Open navigation Drawer</string>
     <string name="navigation_drawer_close">Close navigation Drawer</string>

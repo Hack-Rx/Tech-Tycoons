@@ -221,7 +221,7 @@ public class EditProfile extends AppCompatActivity implements View.OnClickListen
 
             @Override
             public void onFailure(Call<EditProfileResponse> call, Throwable t) {
-                Toast.makeText ( EditProfile.this, t.getMessage (), Toast.LENGTH_SHORT ).show ();
+//                Toast.makeText ( EditProfile.this, t.getMessage (), Toast.LENGTH_SHORT ).show ();
 
             }
         } );

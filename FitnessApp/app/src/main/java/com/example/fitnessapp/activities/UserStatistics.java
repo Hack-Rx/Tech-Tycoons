@@ -37,7 +37,7 @@ public class UserStatistics extends AppCompatActivity implements AdapterView.OnI
     Boolean lactoseIntolerance = false;
     private EditText editTextName, editTextWeight,editTextHeight, editTextAge;
     private Spinner genSpinner, goalSpinner, activitySpinner, dietSpinner;
-    //    private TextView tvSelectedChoicses;
+//    private TextView tvSelectedChoicses;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
@@ -45,11 +45,11 @@ public class UserStatistics extends AppCompatActivity implements AdapterView.OnI
         requestWindowFeature( Window.FEATURE_NO_TITLE); //will hide the title
         getSupportActionBar().hide(); // hide the title bar
         setContentView ( R.layout.activity_user_statistics );
-        genSpinner = findViewById(R.id.spinGender);
+         genSpinner = findViewById(R.id.spinGender);
         genSpinner.setOnItemSelectedListener(this);
-        goalSpinner = findViewById(R.id.spinGoals);
+         goalSpinner = findViewById(R.id.spinGoals);
         goalSpinner.setOnItemSelectedListener(this);
-        activitySpinner = findViewById(R.id.spinActivity);
+         activitySpinner = findViewById(R.id.spinActivity);
         activitySpinner.setOnItemSelectedListener(this);
         dietSpinner = findViewById ( R.id.spinDiet );
         dietSpinner.setOnItemSelectedListener ( this );
@@ -175,18 +175,18 @@ public class UserStatistics extends AppCompatActivity implements AdapterView.OnI
             @Override
             public void onResponse(Call<UserStatsResponse> call, Response<UserStatsResponse> response) {
                 UserStatsResponse userStatsResponse = response.body ();
-                Log.d("err", String.valueOf ( response ) );
+          Log.d("err", String.valueOf ( response ) );
 
-                if(userStatsResponse!=null) {
-                    if (userStatsResponse.isSucess ()) {
-                        SharedPreferenceManager.getInstance (  UserStatistics.this).saveStatistics ( userStatsResponse.getData () );
-                        Intent intent = new Intent ( UserStatistics.this, MedicalInfo.class );
-                        intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
-                        startActivity ( intent );
-                    } else {
-                        Toast.makeText ( UserStatistics.this, "some error", Toast.LENGTH_SHORT ).show ();
-                    }
-                }
+           if(userStatsResponse!=null) {
+             if (userStatsResponse.isSucess ()) {
+                SharedPreferenceManager.getInstance (  UserStatistics.this).saveStatistics ( userStatsResponse.getData () );
+                 Intent intent = new Intent ( UserStatistics.this, MedicalInfo.class );
+                intent.setFlags ( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
+                 startActivity ( intent );
+                } else {
+                     Toast.makeText ( UserStatistics.this, "some error", Toast.LENGTH_SHORT ).show ();
+                        }
+           }
 
             }
 

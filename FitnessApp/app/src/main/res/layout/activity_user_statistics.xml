@@ -276,6 +276,14 @@
 
         </LinearLayout>
     </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="80dp"
+        android:layout_below="@+id/linlay5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="sedentary:0-30mins/day, lightly active: 1-2hours/day, active:2-3hours/day, very-active:3-5hous/day "/>
 
 
     <LinearLayout
@@ -287,7 +295,7 @@
         android:layout_marginTop="35dp"
         android:paddingLeft="15dp"
         android:paddingRight="30dp"
-        android:layout_below="@+id/linlay5"
+        android:layout_below="@+id/text1"
         >
         <ImageView
             android:layout_width="60dp"
@@ -311,6 +319,14 @@
             </Spinner>
         </LinearLayout>
     </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="80dp"
+        android:layout_below="@+id/linlay6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:text="Extreme lose weight : 1-3 kg/month,Minor loose weight: 3-5 kg/month, Weight Gain : 1-3 kg/month, Minor Weight Gain : 3-5 kg/month"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -321,7 +337,7 @@
         android:layout_marginTop="35dp"
         android:paddingLeft="15dp"
         android:paddingRight="30dp"
-        android:layout_below="@+id/linlay6"
+        android:layout_below="@+id/text2"
         >
         <ImageView
             android:layout_width="60dp"

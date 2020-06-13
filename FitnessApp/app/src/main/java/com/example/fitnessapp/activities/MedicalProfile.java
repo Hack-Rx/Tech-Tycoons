@@ -17,8 +17,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MedicalProfile extends AppCompatActivity {
-    private TextView description;
-    private TextView bloodGroup;
+private TextView description;
+private TextView bloodGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,27 +30,27 @@ public class MedicalProfile extends AppCompatActivity {
         String token = "";
         tempToken = SharedPreferenceManager.getInstance ( this ).getUser ().getToken ();
         token = "token " + tempToken;
-        Call<MedicalResponse> call = RetrofitClient.getInstance ().getApi ().medicalData ( token );
-        call.enqueue ( new Callback<MedicalResponse> () {
-            @Override
-            public void onResponse(Call<MedicalResponse> call, Response<MedicalResponse> response) {
-                if(response.body ().getSucess ()){
-                    String bg="";
-                    String desc="";
+       Call<MedicalResponse> call = RetrofitClient.getInstance ().getApi ().medicalData ( token );
+       call.enqueue ( new Callback<MedicalResponse> () {
+           @Override
+           public void onResponse(Call<MedicalResponse> call, Response<MedicalResponse> response) {
+               if(response.body ().getSucess ()){
+                   String bg="";
+                   String desc="";
 
-                    bg = response.body ().getData ().getBloodGroup ();
-                    desc = response.body ().getData ().getDescription ();
+                   bg = response.body ().getData ().getBloodGroup ();
+                   desc = response.body ().getData ().getDescription ();
 
-                    description.setText ( desc );
-                    bloodGroup.setText ( bg );
+                   description.setText ( desc );
+                   bloodGroup.setText ( bg );
+                   
+               }
+           }
 
-                }
-            }
+           @Override
+           public void onFailure(Call<MedicalResponse> call, Throwable t) {
 
-            @Override
-            public void onFailure(Call<MedicalResponse> call, Throwable t) {
-
-            }
-        } );
+           }
+       } );
     }
 }
