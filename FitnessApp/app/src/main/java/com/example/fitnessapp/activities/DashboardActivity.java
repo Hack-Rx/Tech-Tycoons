@@ -145,10 +145,14 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                 Intent intent2 = new Intent ( this, DailyDiet.class );
                 startActivity ( intent2 );
                 break;
-//            case R.id.nav_chat:
-//                Intent intent5 = new Intent ( this, ChatBot.class );
-//                startActivity ( intent5 );
-//                break;
+            case R.id.nav_chat:
+                Intent intent5 = new Intent ( this, ChatBot.class );
+                startActivity ( intent5 );
+                break;
+            case R.id.nav_Overboard:
+                Intent intent6= new Intent ( this, Overboard.class );
+                startActivity ( intent6 );
+                break;
             case R.id.nav_medical:
                 Intent intent4 = new Intent ( this,MedicalProfile.class );
                 startActivity ( intent4 );
@@ -165,4 +169,3 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         return true;
     }
 }
-

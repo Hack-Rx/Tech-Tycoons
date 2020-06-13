@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Overboard">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For burning those extra calories..."
+            android:textSize="30dp"
+            android:textColor="#FF4E50"
+            android:padding="15dp"
+            android:fontFamily="@font/baloo"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/container_bg"
+            android:paddingHorizontal="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/swimming"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swimming"
+                android:textSize="30dp"
+                android:paddingHorizontal="20dp"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/container_bg"
+            android:paddingHorizontal="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/cycling"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cycling"
+                android:textSize="30dp"
+                android:paddingHorizontal="20dp"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/container_bg"
+            android:paddingHorizontal="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/skipping"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skipping"
+                android:textSize="30dp"
+                android:paddingHorizontal="20dp"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/container_bg"
+            android:paddingHorizontal="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/yoga"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yog Asana"
+                android:textSize="30dp"
+                android:paddingHorizontal="20dp"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/container_bg"
+            android:paddingHorizontal="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/jogging"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jogging"
+                android:textSize="30dp"
+                android:paddingHorizontal="20dp"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/container_bg"
+            android:paddingHorizontal="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/sporta"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any Sport"
+                android:textSize="30dp"
+                android:paddingHorizontal="20dp"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/container_bg"
+            android:paddingHorizontal="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/zumba"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zumba"
+                android:textSize="30dp"
+                android:paddingHorizontal="20dp"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

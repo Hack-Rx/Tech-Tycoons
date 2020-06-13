@@ -3,15 +3,25 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:iconTint="#fff000"
+
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home"
             android:title="Home" />
         <item
-            android:iconTint="#fff000"
+
             android:id="@+id/nav_add"
             android:icon="@drawable/ic_add"
             android:title="Add Meal" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat"
+            android:title="Queries" />
+        <item
+            android:id="@+id/nav_Overboard"
+            android:icon="@drawable/over"
+            android:title="If Overboard" />
+
+
 
 
     </group>
