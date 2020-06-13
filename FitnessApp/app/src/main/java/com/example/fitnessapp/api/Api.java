@@ -1,9 +1,11 @@
 package com.example.fitnessapp.api;
 
+import com.example.fitnessapp.model_class.DailyDataResponse;
 import com.example.fitnessapp.model_class.DashboardResponse;
 import com.example.fitnessapp.model_class.EditProfileResponse;
 import com.example.fitnessapp.model_class.Food;
 import com.example.fitnessapp.model_class.FoodQuery;
+import com.example.fitnessapp.model_class.GetDailyDataResponse;
 import com.example.fitnessapp.model_class.LoginResponse;
 import com.example.fitnessapp.model_class.MedicalDataResponse;
 import com.example.fitnessapp.model_class.MedicalResponse;
@@ -17,6 +19,7 @@ import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Query;
@@ -54,21 +57,16 @@ public interface Api {
             @Field("lactoseIntolerance") Boolean lactoseIntolerance
 
     );
+
+    @GET("info/profile/")
+    Call<DashboardResponse> getInfo(@Header("Authorization") String token);
+
     @GET("food/get-recoomended-food/")
     Call<List<Food>> getFood(@Header("Authorization") String token);
 
-    @FormUrlEncoded
-    @POST("info/Medicalform/")
-    Call<MedicalDataResponse> getMedicalInfo(
-            @Header("Authorization") String token,
-            @Field ( "bloodGroup" ) int bloodGroup,
-            @Field ( "Description" ) String description,
-            @Field ( "problem" ) int prob1,
-            @Field ( "problem" ) int prob2,
-            @Field ( "problem" ) int prob3
-            );
-    @GET("info/profile/")
-    Call<DashboardResponse> getInfo(@Header("Authorization") String token);
+    @GET("food/list-of-food/")
+    Call<FoodQuery> getFoodInfo(@Header("Authorization") String token,
+                                @Query("search") String foodItemNAme);
 
     @FormUrlEncoded
     @PUT("info/profile/")
@@ -83,9 +81,29 @@ public interface Api {
             @Field("name") String name,
             @Field("foodChoice") int foodChoice,
             @Field("lactoseIntolerance") Boolean lactoseIntolerance);
-    @GET("food/list-of-food/")
-    Call<FoodQuery> getFoodInfo(@Header("Authorization") String token,
-                                @Query("search") String foodItemNAme);
+
+    @FormUrlEncoded
+    @POST("info/Dailydiet/")
+    Call<DailyDataResponse> postDailyFood(
+            @Header("Authorization") String token,
+            @Field("item") int item,
+            @Field("amount") int amount
+    );
+
+    @GET("info/Dailydiet/")
+    Call<GetDailyDataResponse> getDailyFood(
+            @Header("Authorization") String token
+    );
+    @FormUrlEncoded
+    @POST("info/Medicalform/")
+    Call<MedicalDataResponse> getMedicalInfo(
+            @Header("Authorization") String token,
+            @Field ( "bloodGroup" ) int bloodGroup,
+            @Field ( "Description" ) String description,
+            @Field ( "problem" ) int prob1,
+            @Field ( "problem" ) int prob2,
+            @Field ( "problem" ) int prob3
+    );
     @GET("info/Medicalform/")
     Call<MedicalResponse> medicalData(
             @Header("Authorization") String token
