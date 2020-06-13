@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.ChatBot"></activity>
         <activity android:name=".activities.MedicalInfo" />
         <activity android:name=".activities.SignupActivity" />
         <activity android:name=".activities.UserStatistics" />
